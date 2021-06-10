@@ -1,63 +1,35 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">baovehanoi.io</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
-  </div>
+  <main>
+    <social-head
+      :description="'Tìm ngay việc làm bảo vệ tại Hà Nội, đăng ký ứng tuyển, nhận thông báo tuyển dụng việc làm và hỗ trợ trò chuyện miễn phí.'"
+      :title="'Việc làm bảo vệ tại Hà Nội'"
+      :image="'https://baovehanoi.ga/images/viec-lam-bao-ve-tai-ha-noi.jpg'"
+    />
+    <header-component />
+    <section-top />
+    <section-one />
+    <section-two />
+    <section-three />
+    <section-four />
+  </main>
 </template>
-
 <script>
-export default {}
+import SocialHead from '@/components/SocialHead.vue'
+import HeaderComponent from '@/components/Header.vue'
+import SectionTop from '@/components/SectionTop.vue'
+import SectionOne from '@/components/SectionOne.vue'
+import SectionTwo from '@/components/SectionTwo.vue'
+import SectionThree from '@/components/SectionThree.vue'
+import SectionFour from '@/components/SectionFour.vue'
+export default {
+  components: {
+    SocialHead,
+    HeaderComponent,
+    SectionTop,
+    SectionOne,
+    SectionTwo,
+    SectionThree,
+    SectionFour,
+  },
+}
 </script>
-
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
