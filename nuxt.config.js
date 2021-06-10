@@ -1,4 +1,4 @@
-const website = 'https://baovekawasaki.tk'
+const website = 'https://baovehanoi.ga'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
