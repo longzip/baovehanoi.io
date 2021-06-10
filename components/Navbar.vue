@@ -217,7 +217,7 @@
             >
           </li>
           <li class="flex items-center">
-            <button
+            <a
               class="
                 bg-white
                 text-gray-800
@@ -238,6 +238,8 @@
               "
               type="button"
               style="transition: all 0.15s ease 0s"
+              href="https://vn.vieclambaove.ga/wordpress/wp-login.php?loginSocial=google"
+              rel="nofollow"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -254,7 +256,7 @@
                 />
               </svg>
               Đăng nhập
-            </button>
+            </a>
           </li>
         </ul>
       </div>
